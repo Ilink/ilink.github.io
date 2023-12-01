@@ -1,1 +1,5 @@
 theme = 'PaperMod'
+
+[params]
+ShowToc = true
+author = "Ian Link"
