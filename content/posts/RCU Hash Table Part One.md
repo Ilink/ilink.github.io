@@ -1,5 +1,5 @@
 ---
-title: RCU Hash Table Part One
+title: RCU Hash Table - Part One
 date: 2023-11-29
 draft: false
 ---
@@ -64,6 +64,6 @@ struct Entry {
 ```
 The reader must atomically increment the counter before reading `ptr` (or `next`). That way, the data cannot disappear before it dereferences the pointer. Note that because the ref_cnt might actually be for a different ptr than what was originally there when it incremented it!
 
-There's quite a bit more trickyness to this algorithm which we'll get into in future articles. I haven't implemented this one yet, so some of that trickyness is yet-unknown to me. It might also be that this design as presented doesn't work at all!
+There's quite a bit more trickiness to this algorithm which we'll get into in future articles. I haven't implemented this one yet, so some of that trickiness is yet-unknown to me. It might also be that this design as presented doesn't work at all!
 
 
